@@ -52,7 +52,7 @@ namespace StockAvailableAPI.Controllers
         [HttpPut]
         public async Task<ActionResult<List<Product>>> UpdateProduct(Product request)
         {
-            var dbProduct = await _context.products.FindAsync(request Id);
+            var dbProduct = await _context.products.FindAsync(request.Id);
             if (dbProduct == null)
                 return BadRequest("Product not found!");
 
