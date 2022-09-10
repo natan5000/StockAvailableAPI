@@ -7,5 +7,6 @@ namespace StockAvailableAPI.Data
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
         public DbSet<Models.Product> products { get; set; }
+        public DbSet<Models.TypeOperation> typeOperations { get; set; }
     }
 }
