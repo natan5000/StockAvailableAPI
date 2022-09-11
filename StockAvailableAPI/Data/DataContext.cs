@@ -9,5 +9,6 @@ namespace StockAvailableAPI.Data
         public DbSet<Models.Product> products { get; set; }
         public DbSet<Models.TypeOperation> typeOperations { get; set; }
         public DbSet<Models.Box> boxes { get; set; }
+        public DbSet<Models.Operation> operations { get; set; }
     }
 }
